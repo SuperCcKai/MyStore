@@ -1,0 +1,133 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- Basic page needs
+	============================================ -->
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow" />
+   
+	<!-- Mobile specific metas
+	============================================ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Favicon
+	============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+	
+	<!-- Google web fonts
+	============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="css/themecss/lib.css" rel="stylesheet">
+	<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	
+	<!-- Theme CSS
+	============================================ -->
+   	<link href="css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="css/themecss/so-categories.css" rel="stylesheet">
+	<link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
+	
+		<link id="color_scheme" href="css/theme.css" rel="stylesheet">
+		
+	<link href="css/responsive.css" rel="stylesheet">
+</head>
+<body class="res layout-subpage">
+
+     
+
+
+    <div id="wrapper" class="wrapper-full ">
+		<!-- Header Container  -->
+		<header id="header" class=" variantleft type_1"> <!-- Header Top -->
+		<div class="header-top">
+			<jsp:include page="common/top2.jsp" />
+		</div>
+		<!-- //Header Top --> <!-- Header center -->
+		<div class="header-center left" style="padding-bottom: 0px;">
+			<jsp:include page="common/top3.jsp" />
+		</div>
+		<div class="header-bottom">
+			<jsp:include page="common/top4.jsp" />
+		</div>
+		</header>
+		<div id="menu-mng" class="lefter" >
+		
+	</div>
+		<div class="main-container container">
+			<ul class="breadcrumb">
+				<li>${navCode }</li>
+			</ul>
+			<div id="main" class="wrap">
+				<div id="menu-mng" class="lefter">
+					<div  class="box">
+						<dl>
+							<dt>用户管理</dt>
+							<dd>
+								<a href="user_getUserInfo.action">个人信息管理</a>
+							</dd>
+							<dt>订单管理</dt>
+							<dd>
+								<a href="order_findOrder.action">个人订单管理</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="main" style="margin-left: 210px;">
+					<jsp:include page="${mainPage }"/>
+				</div>
+
+				<!-- //Main Container -->
+
+
+			</div>
+		</div>
+		<!-- Footer Container -->
+			<jsp:include page="common/footer2.jsp" />
+			<!-- //end Footer Container -->
+
+	</div>
+	
+	
+	
+<!-- Include Libs & Plugins
+	============================================ -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/themejs/libs.js"></script>
+	<script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+	<script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+	<script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+	<script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	
+	
+	<!-- Theme files
+	============================================ -->
+	
+	
+	<script type="text/javascript" src="js/themejs/so_megamenu2.js"></script>
+	<script type="text/javascript" src="js/themejs/addtocart.js"></script>
+	<script type="text/javascript" src="js/themejs/application.js"></script>
+	
+	
+	
+</body>
+</html>

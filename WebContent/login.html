@@ -1,0 +1,1006 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Basic page needs
+	============================================ -->
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow" />
+   
+	<!-- Mobile specific metas
+	============================================ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Favicon
+	============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+	
+	<!-- Google web fonts
+	============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="css/themecss/lib.css" rel="stylesheet">
+	<link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+	
+	<!-- Theme CSS
+	============================================ -->
+   	<link href="css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="css/themecss/so-categories.css" rel="stylesheet">
+	<link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
+	
+		<link id="color_scheme" href="css/theme.css" rel="stylesheet">
+		
+	<link href="css/responsive.css" rel="stylesheet">
+	
+   
+	
+</head>
+
+<body class="res layout-subpage">
+
+     
+
+
+    <div id="wrapper" class="wrapper-full ">
+	<!-- Header Container  -->
+	<header id="header" class=" variantleft type_1">
+<!-- Header Top -->
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="header-top-left form-inline col-sm-6 col-xs-12 compact-hidden">
+			
+			</div>
+			<div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
+				<h5 class="tabBlockTitle visible-xs">More<a class="expander " href="#TabBlock-1"><i class="fa fa-angle-down"></i></a></h5>
+				<div class="tabBlock" id="TabBlock-1">
+					<ul class="top-link list-inline">
+						<li class="account" id="my_account">
+							<a href="#" title="My Account" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> <span >我的账户</span> <span class="fa fa-angle-down"></span></a>
+							<ul class="dropdown-menu ">
+								<li><a href="register.html"><i class="fa fa-user"></i> 注册</a></li>
+								<li><a href="login.html"><i class="fa fa-pencil-square-o"></i>登录</a></li>
+							</ul>
+						</li>
+						<li class="wishlist"><a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (2)"><span>收藏</span></a></li>
+						<li class="checkout"><a href="#" class="top-link-checkout" title="Checkout"><span >结算</span></a></li>
+						<li class="login"><a href="#" title="Shopping Cart"><span >购物车</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //Header Top -->
+
+<!-- Header center -->
+<div class="header-center left">
+	<div class="container">
+		<div class="row">
+			<!-- Logo -->
+			<div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
+				<a href="index.html"><img src="image/demo/logos/theme_logo.png" title="Your Store" alt="Your Store" /></a>
+			</div>
+			<!-- //end Logo -->
+
+			<!-- Search -->
+			<div id="sosearchpro" class="col-sm-7 search-pro">
+				<form method="GET" action="index.html">
+					<div id="search0" class="search input-group">
+						<div class="select_category filter_type icon-select">
+							<select class="no-border" name="category_id">
+								<option value="0">全部分类</option>
+								<option value="78">播音主持艺术学院</option>
+								<option value="77">广播电视学院</option>
+								<option value="82">新闻传播学院</option>
+								<option value="80">国际传播学院</option>
+								<option value="81">戏剧影视学院</option>
+								<option value="79">美术与设计学院</option>
+								<option value="20">动画与数字艺术学院</option>
+								<option value="76">文化管理学院</option>
+								<option value="26">传媒技术学院</option>
+								<option value="27">摄影学院</option>
+							</select>
+						</div>
+
+						<input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search" name="search">
+						<span class="input-group-btn">
+						<button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+					<input type="hidden" name="route" value="product/search" />
+				</form>
+			</div>
+			<!-- //end Search -->
+
+			<!-- Secondary menu -->
+			<div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
+				<!--cart-->
+				<div id="cart" class=" btn-group btn-shopping-cart">
+					<a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+						<div class="shopcart">
+							<span class="handle pull-left"></span>
+							<span class="title">My cart</span>
+							<p class="text-shopping-cart cart-total-full">2 item(s) - $1,262.00 </p>
+						</div>
+					</a>
+
+					<ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+						
+						<li>
+							<table class="table table-striped">
+								<tbody>
+									<tr>
+										<td class="text-center" style="width:70px">
+											<a href="product.html"> <img src="image/demo/shop/product/35.jpg" style="width:70px" alt="Filet Mign" title="Filet Mign" class="preview"> </a>
+										</td>
+										<td class="text-left"> <a class="cart_product_name" href="product.html">Filet Mign</a> </td>
+										<td class="text-center"> x1 </td>
+										<td class="text-center"> $1,202.00 </td>
+										<td class="text-right">
+											<a href="product.html" class="fa fa-edit"></a>
+										</td>
+										<td class="text-right">
+											<a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" style="width:70px">
+											<a href="product.html"> <img src="image/demo/shop/product/141.jpg" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D" class="preview"> </a>
+										</td>
+										<td class="text-left"> <a class="cart_product_name" href="product.html">Canon EOS 5D</a> </td>
+										<td class="text-center"> x1 </td>
+										<td class="text-center"> $60.00 </td>
+										<td class="text-right">
+											<a href="product.html" class="fa fa-edit"></a>
+										</td>
+										<td class="text-right">
+											<a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<div>
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td class="text-left"><strong>Sub-Total</strong>
+											</td>
+											<td class="text-right">$1,060.00</td>
+										</tr>
+										<tr>
+											<td class="text-left"><strong>Eco Tax (-2.00)</strong>
+											</td>
+											<td class="text-right">$2.00</td>
+										</tr>
+										<tr>
+											<td class="text-left"><strong>VAT (20%)</strong>
+											</td>
+											<td class="text-right">$200.00</td>
+										</tr>
+										<tr>
+											<td class="text-left"><strong>Total</strong>
+											</td>
+											<td class="text-right">$1,262.00</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="text-right"> <a class="btn view-cart" href="#"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="#"><i class="fa fa-share"></i>Checkout</a> </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--//cart-->
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- //Header center -->
+
+<!-- Header Bottom -->
+<div class="header-bottom">
+	<div class="container">
+		<div class="row">
+			
+			<div class="sidebar-menu col-md-3 col-sm-6 col-xs-12 ">
+				<div class="responsive so-megamenu ">
+					<div class="so-vertical-menu no-gutter compact-hidden">
+						<nav class="navbar-default">	
+							
+							<div class="container-megamenu vertical  ">
+								
+								<div id="menuHeading">
+									<div class="megamenuToogle-wrapper">
+										<div class="megamenuToogle-pattern">
+											<div class="container">
+												<div>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+												全部分类							
+												<i class="fa pull-right arrow-circle fa-chevron-circle-up"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="navbar-header">
+									<button type="button" id="show-verticalmenu" data-toggle="collapse" class="navbar-toggle fa fa-list-alt">
+										
+									</button>
+									All Categories		
+								</div>
+								<div class="vertical-wrapper" >
+									<span id="remove-verticalmenu" class="fa fa-times"></span>
+									<div class="megamenu-pattern">
+										<div class="container">
+											<ul class="megamenu">
+												<li class="item-vertical style1 with-sub-menu hover">
+													<p class="close-menu"></p>
+													<a href="#" class="clearfix">
+														<img src="image/theme/icons/9.png" alt="icon">
+														<span>播音主持艺术学院</span>
+														<b class="caret"></b>
+													</a>
+													<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">新闻评论</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">社教专题</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">综艺娱乐</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">会展及商务节目播音主持</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">出镜记者</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">影视剧配音及文艺作品演播</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">双语主持</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+												</li>
+						
+												<li class="item-vertical with-sub-menu hover">
+													<p class="close-menu"></p>
+													<a href="#" class="clearfix">
+														<span class="label"></span>
+														<img src="image/theme/icons/3.png" alt="icon">
+														<span>广播电视学院</span>
+														<b class="caret"></b>
+													</a>
+													<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">广播电视编导（电视编导）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">广播电视编导（文艺编导）</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>新闻传播学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">新闻学</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">广播电视新闻学</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">传播学（企业传播方向）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">舆情调查与分析方向</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">广告学</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">编辑出版学</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">媒体创意</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">新媒体与信息网络</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>国际传播学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">播音与主持艺术（外语）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">外语+国际新闻</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>戏剧影视学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">戏剧影视文学</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">戏剧美术设计</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">录音艺术</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">音乐学</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">戏剧影视</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">表演</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>美术与设计学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">广告设计</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">环境艺术设计</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">会展设计</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">工业设计</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">服装设计</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">文物鉴定及保护</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>动画与数字艺术学院院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">数字媒体艺术（数字娱乐方向）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">数字媒体艺术（数字电影技术）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">数字媒体艺术（数字影视特效）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">数字媒体艺术（网络多媒体）</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">动画（二维、三维）</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">动画（漫画与插画）</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">动画（游戏美术）</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>文化管理学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">对外汉语</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">汉语言文学</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">广播电视编导</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">文化产业管理</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">公共事业管理</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">经济学</a>
+																						</li>
+                                                                                        <li>
+																							<a href="#" class="main-menu">国际文化贸易</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>传媒技术学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">广播电视工程</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">计算机科学与技术</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">数字媒体技术</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">通信工程</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">电子信息工程</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+                                                    <li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>摄影学院</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">图片摄影</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">电视摄影</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">照明与艺术</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical css-menu with-sub-menu hover">
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															
+															<img src="image/theme/icons/2.png" alt="icon">
+															<span>思政与基础教学部</span>
+															<b class="caret"></b>
+														</a>
+														<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+															<div class="content" style="display: none;">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="row">
+																			<div class="col-sm-12 hover-menu">
+																				<div class="menu">
+																					<ul>
+																						<li>
+																							<a href="#" class="main-menu">Headphones, Headsets</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">Home Audio</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">Health &amp; Beauty</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">Helicopters &amp; Parts</a>
+																						</li>
+																						<li>
+																							<a href="#" class="main-menu">Helicopters &amp; Parts</a>
+																						</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="item-vertical" >
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<img src="image/theme/icons/12.png" alt="icon">
+															<span>Jewelry &amp; Watches</span>
+														</a>
+													</li>
+													<li class="item-vertical" >
+														<p class="close-menu"></p>
+														<a href="#" class="clearfix">
+															<img src="image/theme/icons/13.png" alt="icon">
+															<span>Bags, Holiday Supplies</span>
+														</a>
+													</li>
+													<li class="item-vertical" >
+														<p class="close-menu"></p>
+														
+														<a href="#" class="clearfix">
+															<img src="image/theme/icons/13.png" alt="icon">
+															<span>More Car Accessories</span>
+														</a>
+													</li>
+													<li class="loadmore">
+														<i class="fa fa-plus-square-o"></i>
+														<span class="more-view">More Categories</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</nav>
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- Main menu -->
+			<div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+				<div class="responsive so-megamenu ">
+	<nav class="navbar-default">
+		<div class=" container-megamenu  horizontal">
+			
+			<div class="navbar-header">
+				<button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				Navigation		
+			</div>
+			
+			<div class="megamenu-wrapper">
+				<span id="remove-megamenu" class="fa fa-times"></span>
+				<div class="megamenu-pattern">
+					<div class="container">
+						<ul class="megamenu " data-transition="slide" data-animationtime="250">
+							<li class="home hover">
+								
+								<a href="index.html">首页 <b class="caret"></b></a>
+								
+							</li>
+							
+							<li class="with-sub-menu hover">
+								<p class="close-menu"></p>
+								<a href="#" class="clearfix">
+									<strong>图书评选</strong>
+									<span class="label"> Hot</span>
+									<b class="caret"></b>
+								</a>
+								
+							</li>
+							
+							
+							<li class="with-sub-menu hover">
+								<p class="close-menu"></p>
+								<a href="#" class="clearfix">
+									<strong>留言板</strong>
+									
+									<b class="caret"></b>
+								</a>
+								
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>
+									</div>
+			<!-- //end Main menu -->
+			
+		</div>
+	</div>
+
+</div>
+
+<!-- Navbar switcher -->
+<!-- //end Navbar switcher -->
+	</header>
+	<!-- //Header Container  -->
+	<!-- Main Container  -->
+	<div class="main-container container">
+		<ul class="breadcrumb">
+			<li><a href="#"><i class="fa fa-home"></i></a></li>
+			<li><a href="#">账户</a></li>
+			<li><a href="#">登录</a></li>
+		</ul>
+		
+		<div class="row">
+			<div id="content" class="col-sm-12">
+				<div class="page-login">
+				
+					<div class="account-border">
+						<div class="row">
+							<div class="col-sm-6 new-customer">
+								<div class="well">
+									<h2><i class="fa fa-file-o" aria-hidden="true"></i> 新用户									</h2>
+									<p>新用户，您好！点击&ldquo;继续&rdquo;, 将进入注册页面 ，在相应提示处输入您的用户名、邮箱地址、密码、确认密码等点击&ldquo;注册&rdquo;即可。 </p>
+								</div>
+								<div class="bottom-form">
+									<a href="register.html" class="btn btn-default pull-right">继续</a>
+								</div>
+							</div>
+							
+							<form action="#" method="post" enctype="multipart/form-data">
+								<div class="col-sm-6 customer-login">
+									<div class="well">
+										<h2><i class="fa fa-file-text-o" aria-hidden="true"></i> 已注册</h2>
+										<p>&nbsp;</p>
+										<div class="form-group">
+											<label class="control-label " for="input-email">电子邮箱
+											  <input type="text" name="email" value="" id="input-email" class="form-control" />
+											</label>
+										</div>
+										<div class="form-group">
+											<label class="control-label " for="input-password">密码</label><input type="password" name="password" value="" id="input-password" class="form-control" />
+										</div>
+									</div>
+									<div class="bottom-form">
+										<a href="#" class="forgot">忘记密码</a>
+										<input type="submit" value="登录" class="btn btn-default pull-right" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Main Container -->
+	
+
+	<!-- Footer Container -->
+	<footer class="footer-container">
+		<!-- Footer Top Container -->
+		<section class="footer-top">
+			<div class="container content">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 box-information">
+						<div class="module clearfix">
+							<h3 class="modtitle">新手入门</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">购物保障</a></li>
+									<li><a href="#">常见问题</a></li>
+									<li><a href="#">会员介绍</a></li>
+									<li><a href="#">联系客服</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 box-service">
+						<div class="module clearfix">
+							<h3 class="modtitle">购物指南</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">购物流程</a></li>
+									<li><a href="#">发票制度</a></li>
+									<li><a href="#">账户管理</a></li>
+									<li><a href="#">会员优惠</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 box-account">
+						<div class="module clearfix">
+							<h3 class="modtitle">售后服务</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">退换货流程</a></li>
+									<li><a href="#">退款及提现</a></li>
+									<li><a href="#">退换货申请</a></li>
+									<li><a href="#">投诉与建议</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 box-account">
+						<div class="module clearfix">
+							<h3 class="modtitle">商家服务</h3>
+							<div class="modcontent">
+								<ul class="menu">
+									<li><a href="#">商家中心</a></li>
+									<li><a href="#">运营服务</a></li>
+									<li><a href="#">加入我们</a></li>
+									<li><a href="#">交易条款</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 collapsed-block footer-links">
+						<div class="module clearfix">
+							<div class="modcontent">
+								<hr class="footer-lines">
+								<div class="footer-directory-title">
+									
+								  <ul class="footer-directory">
+										<li>
+											
+										  <a href="#">关于唯艺</a> | <a href="#">联系唯艺</a> | <a href="#">加入唯艺</a> | <a href="#">合作伙伴</a></li>
+										<li>
+											
+											<a href="#"> <a href="#">增值电信业务经营许可证：川B2-20100040</a> | <a href="#">出版物经营许可证</a> | <a href="#">蜀ICP备11014037号</a></li>
+										<li>
+											
+											<a href="#">Copyright(C) 文轩网 2000-2016 版权所有</a> | <a href="#">客服热线：400-702-0808 </a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Footer Top Container -->
+		
+		<!-- Footer Bottom Container -->
+		<div class="footer-bottom-block ">
+			<div class=" container">
+				<div class="row">
+					<div class="col-sm-5 copyright-text"></div>
+					<div class="col-sm-7">
+						<div class="block-payment text-right"></div>
+					</div>
+					<!--Back To Top-->
+					<div class="back-to-top"><i class="fa fa-angle-up"></i><span> Top </span></div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /Footer Bottom Container -->
+		
+		
+	</footer>
+	<!-- //end Footer Container -->
+
+    </div>
+	
+	
+	
+<!-- Preloading Screen -->
+<div id="loader-wrapper">
+	<div id="loader"></div>
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+ </div>
+<!-- End Preloading Screen -->
+<!-- Include Libs & Plugins
+	============================================ -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/themejs/libs.js"></script>
+	<script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+	<script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+	<script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+	<script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+	
+	
+	<!-- Theme files
+	============================================ -->
+	
+	
+	<script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
+	<script type="text/javascript" src="js/themejs/addtocart.js"></script>
+	<script type="text/javascript" src="js/themejs/application.js"></script>
+	
+	
+	
+</body>
+</html>
+
